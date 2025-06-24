@@ -13,7 +13,7 @@ public struct AirdropEvent has copy, drop {
 }
 
 
-public entry fun send_by_allocation<T: store>(
+public entry fun send_by_allocation<T>(
     coin: &mut Coin<T>,
     recipients: vector<address>,
     amounts: vector<u64>,
